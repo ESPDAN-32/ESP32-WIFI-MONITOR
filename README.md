@@ -1,6 +1,6 @@
 # ESP32 WiFi Monitor 📡
 
-WiFi monitor for ESP32 DevKit V1 with 1.8" TFT display (ST7735, 128x160).
+WiFi monitor for ESP32 DevKit V1 with 1.8" TFT display (ST7735 & ST7735S, 128x160).
 
 Displays: **SSID, password, IP address, MAC address, signal strength**.
 
@@ -17,9 +17,9 @@ Displays: **SSID, password, IP address, MAC address, signal strength**.
 
 ## 📦 Components
 
-- ESP32 DevKit V1 (or any ESP32 board)
-- 1.8" SPI TFT display (ST7735S, 128x160)
-- Female-to-female jumper wires (8 pieces)
+- ESP32 DevKit V1 (TYPE-C or MICRO USB)
+- 1.8" SPI TFT display (ST7735S & ST7735, 128x160)
+- Female-to-female jumper wires (8 pieces, Dupont)
 
 ---
 
@@ -44,7 +44,7 @@ Displays: **SSID, password, IP address, MAC address, signal strength**.
 
 1. Install Arduino IDE
 2. Install **TFT_eSPI** library by Bodmer
-3. Configure `User_Setup.h` (see `/config` folder for example)
+3. Configure `User_Setup.h` (in User_setup.h)
 4. Upload `WiFi_Monitor.ino` to your ESP32
 
 ---
@@ -64,8 +64,6 @@ Displays: **SSID, password, IP address, MAC address, signal strength**.
 ## ⚠️ Important
 
 - Replace `YOUR_SSID` and `YOUR_PASSWORD` with your actual WiFi credentials before uploading
-- Display is 3.3V logic only — do not connect to 5V
+- Display is 3.3V logic only — DO NOT CONNECT TO 5V!!!
 
----
-
-## 📸 Screenshot
+- Good use ☺️
